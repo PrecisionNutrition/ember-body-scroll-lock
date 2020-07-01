@@ -1,5 +1,15 @@
 # {{body-scroll-lock}} modifier
 
+<p>
+  <a href="https://github.com/PrecisionNutrition/ember-body-scroll-lock/actions?query=workflow%3ACI" target="_blank" rel="noopener noreferrer">
+    <img src="https://github.com/PrecisionNutrition/ember-body-scroll-lock/workflows/CI/badge.svg" alt="CI status">
+  </a>
+
+  <a href="https://www.npmjs.com/package/ember-body-scroll-lock" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/npm/v/ember-body-scroll-lock?color=informational" alt="NPM version" />
+  </a>
+</p>
+
 Disables body scroll when a target element is rendered and enables it back when the element is removed.
 
 It keeps the target element scrollable, which is useful for components like modals that can have their own scrollbar. It can also prevent a distracting layout shift effect (caused by scrollbar width compensation), when the scrollbar appears and disappears.
