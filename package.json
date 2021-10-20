@@ -1,6 +1,6 @@
 {
   "name": "ember-body-scroll-lock",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Modifier for locking body scroll while preserving element scrolling.",
   "keywords": [
     "ember-addon"
