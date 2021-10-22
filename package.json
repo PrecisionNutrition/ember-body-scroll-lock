@@ -71,7 +71,7 @@
     "qunit-dom": "^2.0.0"
   },
   "lint-staged": {
-    "*.{js,css}": "prettier --write",
+    "*.{css,js,md,ts,yaml,yml}": "prettier --write",
     "*.js": "eslint --cache --fix",
     "*.hbs": "ember-template-lint"
   },
