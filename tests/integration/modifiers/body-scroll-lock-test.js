@@ -1,4 +1,4 @@
-import { module, test } from 'qunit';
+import { module, test, skip } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render, settled } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
@@ -66,7 +66,7 @@ module('Integration | Modifier | body-scroll-lock', function (hooks) {
     assert.dom(document.body).hasStyle({ overflow: originalValue });
   });
 
-  test('reserveScrollBarGap option works', async function (assert) {
+  skip('reserveScrollBarGap option works', async function (assert) {
     await render(hbs`
       {{#if this.isRendered}}
         <div {{body-scroll-lock reserveScrollBarGap=true}}></div>
@@ -90,7 +90,7 @@ module('Integration | Modifier | body-scroll-lock', function (hooks) {
     assert.dom(document.body).hasStyle({ 'padding-right': originalValue });
   });
 
-  test('reserveScrollBarGap option works with two elements', async function (assert) {
+  skip('reserveScrollBarGap option works with two elements', async function (assert) {
     await render(hbs`
       {{#if this.isFirstRendered}}
         <div {{body-scroll-lock reserveScrollBarGap=true}}></div>
