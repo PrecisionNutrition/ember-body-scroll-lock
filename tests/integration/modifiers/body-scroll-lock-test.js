@@ -82,9 +82,7 @@ module('Integration | Modifier | body-scroll-lock', function (hooks) {
     this.set('isRendered', true);
     await settled();
 
-    assert
-      .dom(document.body)
-      .doesNotHaveStyle({ 'padding-right': originalValue });
+    assert.dom(document.body).doesNotHaveStyle({ 'padding-right': originalValue });
 
     this.set('isRendered', false);
     await settled();
@@ -112,23 +110,17 @@ module('Integration | Modifier | body-scroll-lock', function (hooks) {
     this.set('isFirstRendered', true);
     await settled();
 
-    assert
-      .dom(document.body)
-      .doesNotHaveStyle({ 'padding-right': originalValue });
+    assert.dom(document.body).doesNotHaveStyle({ 'padding-right': originalValue });
 
     this.set('isSecondRendered', true);
     await settled();
 
-    assert
-      .dom(document.body)
-      .doesNotHaveStyle({ 'padding-right': originalValue });
+    assert.dom(document.body).doesNotHaveStyle({ 'padding-right': originalValue });
 
     this.set('isFirstRendered', false);
     await settled();
 
-    assert
-      .dom(document.body)
-      .doesNotHaveStyle({ 'padding-right': originalValue });
+    assert.dom(document.body).doesNotHaveStyle({ 'padding-right': originalValue });
 
     this.set('isSecondRendered', false);
     await settled();
