@@ -29,11 +29,11 @@ Example:
 
 ```handlebars
 <div
-  class="modal"
-  tabindex="-1"
+  class='modal'
+  tabindex='-1'
   ...attributes
   {{body-scroll-lock reserveScrollBarGap=true}}
-  {{on "keydown" (handle-keys @onClose "Escape")}}
+  {{on 'keydown' (handle-keys @onClose 'Escape')}}
 >
   {{yield}}
 </div>
@@ -56,14 +56,14 @@ Add the `{{body-scroll-lock}}` modifier to an element that should lock body scro
 Example of using `{{body-scroll-lock}}` for a modal:
 
 ```hbs
-{{#in-element (query-selector "#modal-portal")}}
+{{#in-element (query-selector '#modal-portal')}}
   <div
-    class="modal"
-    tabindex="-1"
+    class='modal'
+    tabindex='-1'
     ...attributes
     {{focus-trap}}
     {{body-scroll-lock reserveScrollBarGap=true}}
-    {{on "keydown" (handle-keys @onClose "Escape" stopPropagation=true)}}
+    {{on 'keydown' (handle-keys @onClose 'Escape' stopPropagation=true)}}
   >
     {{yield}}
   </div>
@@ -74,9 +74,9 @@ For more options, read [body-scroll-lock docs](https://github.com/willmcpo/body-
 
 ## Compatibility
 
-- Ember.js v3.12 or above
-- Ember CLI v2.13 or above
-- Node.js v10 or above
+- Ember.js v3.20 or above
+- Ember CLI v3.20 or above
+- Node.js v12 or above
 
 ## Contributing
 
